@@ -58,13 +58,17 @@ flutter run
 
 ### Mobintix monorepo (local SDK changes)
 
-If this folder lives next to `mobintix_ui_kit` and `mobintix_security_suite` source trees, copy overrides so `pub get` uses your local packages:
+If this folder lives next to `mobintix_ui_kit` and `mobintix_security_suite` source trees, add a **gitignored** `pubspec_overrides.yaml` so `pub get` uses your local packages (adjust `path` if your layout differs):
 
-```bash
-cp pubspec_overrides.yaml.example pubspec_overrides.yaml
-# Edit paths if your layout differs
-flutter pub get
+```yaml
+dependency_overrides:
+  mobintix_ui_kit:
+    path: ../../mobintix_ui_kit
+  mobintix_security_suite:
+    path: ../../mobintix_security_suite
 ```
+
+Then run `flutter pub get`.
 
 `pubspec_overrides.yaml` is **gitignored** so the default clone stays pub.dev-only. **Before committing `pubspec.lock`**, remove or rename `pubspec_overrides.yaml`, run `flutter pub get`, then commit so the lockfile stays **hosted-only** for everyone else.
 

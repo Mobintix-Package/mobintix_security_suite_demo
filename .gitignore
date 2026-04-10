@@ -53,5 +53,5 @@ macos/Runner/GoogleService-Info.plist
 # Local SDK paths
 android/local.properties
 
-# Monorepo: local path overrides for mobintix packages (see pubspec_overrides.yaml.example)
+# Monorepo: local path overrides for mobintix packages (see README)
 pubspec_overrides.yaml
