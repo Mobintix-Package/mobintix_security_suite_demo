@@ -1,0 +1,12 @@
+# Monorepo development: copy to pubspec_overrides.yaml (gitignored) to use local
+# packages instead of pub.dev.
+#
+#   cp pubspec_overrides.yaml.example pubspec_overrides.yaml
+#
+# Adjust paths if your folder layout differs.
+
+dependency_overrides:
+  mobintix_ui_kit:
+    path: ../../mobintix_ui_kit
+  mobintix_security_suite:
+    path: ../../mobintix_security_suite

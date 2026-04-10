@@ -1,0 +1,28 @@
+name: mobintix_security_suite_demo
+description: Firebase-backed demo for mobintix_security_suite — MPIN, OTP, biometric, face flows.
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.2.0
+  flutter: '>=3.16.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.12.1
+  cloud_firestore: ^5.6.8
+  crypto: ^3.0.6
+  mobintix_ui_kit: ^0.0.4
+  mobintix_security_suite: ^0.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
